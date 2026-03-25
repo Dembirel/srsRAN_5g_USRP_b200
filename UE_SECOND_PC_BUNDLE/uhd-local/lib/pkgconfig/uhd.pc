@@ -1,0 +1,15 @@
+prefix=/home/dolaan/Desktop/учеба/диплом/srsRAN_5G/uhd-local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: UHD
+Description: Ettus Research - USRP Hardware Driver
+URL: https://github.com/EttusResearch/uhd
+Version: 4.9.0.HEAD-0-cfb98407
+Requires:
+Requires.private: 
+Conflicts:
+Cflags: -I${includedir} -I/usr/include
+Libs: -L${libdir} -luhd
+Libs.private: -L/usr/lib/x86_64-linux-gnu
